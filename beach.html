@@ -179,11 +179,29 @@
   footer p { color: #bbb; }
   .copy { margin-top: 35px; text-align: center; color: #777; font-size: 14px; }
 
-  @media(max-width:768px) {
-    .tour-card { flex-direction: column; text-align: center; }
-    .tour-card img { width: 80%; margin-bottom: 1rem; }
-    .action-btn { width: 180px; font-size: 18px; padding: 14px 0; }
+ @media(max-width:768px) {
+  .tour-card {
+    flex-direction: column;  /* Stack image and text vertically */
+    text-align: center;       /* Center-align text */
+    margin: 1.5rem 0;        /* Reduce spacing */
   }
+
+  .tour-card img {
+    width: 90%;               /* Make image almost full width */
+    height: auto;             /* Maintain aspect ratio */
+    margin-bottom: 1rem;      /* Space between image and text */
+  }
+
+  .tour-info {
+    padding: 1rem 1.5rem;     /* Slightly reduce padding */
+  }
+
+  .book-btn, .customize-btn {
+    width: 80%;               /* Make buttons fit mobile width */
+    font-size: 18px;          /* Slightly smaller font */
+    margin: 2rem auto;        /* Center and spacing */
+  }
+}
 </style>
 </head>
 
